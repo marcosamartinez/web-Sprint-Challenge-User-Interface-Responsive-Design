@@ -158,25 +158,30 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
-header nav {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  color: black;
-  padding: 2rem;
+
+/* Nav Section Styles */
+header nav a img {
+  width: 13em;
 }
 
-header nav img {
-  width: 20%;
-}
-header nav a {
-  color: black;
-}
-.links {
+header nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Jumbo Section Styles */
+.jumbo {
+  padding-top: 3em;
+}
+.jumbo img {
+  display: block;
+  margin: 0 auto;
 }
 
 /*Top Section Styles*/
@@ -185,24 +190,25 @@ header nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 20px;
+  margin-bottom: 4%;
   border-bottom: 2px solid #ff4b00;
+  text-align: justify;
 }
-.topimage img {
-  width: 100%;
-  margin: 0 auto;
+
+.top-content h2 {
+  text-align: center;
 }
 
 .top-content .text-container {
   width: 35%;
-  padding: 3rem 1%;
+  padding: 0 1%;
   padding-bottom: 4%;
-  text-align: center;
 }
 
 /*Middle Section Styles*/
 .middle-content {
   margin-bottom: 4%;
+  border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -212,46 +218,60 @@ header nav a {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-.boxes div {
-  width: 12.5%;
-  height: 125px;
-  text-align: center;
+
+.middle-content .boxes .box {
+  background: black;
   color: white;
-  margin: 2em;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
+
+/* Boxes */
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxes div {
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  margin: 1em;
+  padding: 2em;
+}
+
 .box1 {
   background-color: teal;
 }
 .box2 {
   background-color: gold;
 }
-.middle-content .boxes .box3 {
+.box3 {
   background-color: cadetblue;
 }
-.middle-content .boxes .box4 {
+.box4 {
   background-color: coral;
 }
-.middle-content .boxes .box5 {
+.box5 {
   background-color: crimson;
 }
-.middle-content .boxes .box6 {
+.box6 {
   background-color: forestgreen;
 }
-.middle-content .boxes .box7 {
+.box7 {
   background-color: darkorchid;
 }
-.middle-content .boxes .box8 {
+.box8 {
   background-color: hotpink;
 }
-.middle-content .boxes .box9 {
+.box9 {
   background-color: indigo;
 }
-.middle-content .boxes .box10 {
+.box10 {
   background-color: dodgerblue;
 }
 
@@ -259,7 +279,6 @@ header nav a {
 .bottom-content {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #ff4b00;
 }
 
 .bottom-content .text-container {
@@ -274,46 +293,76 @@ header nav a {
 footer {
   width: 100%;
   background-color: #ff4b00;
-  color: black;
 }
+
 footer nav {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
+  justify-content: space-around;
+  padding: 3em;
 }
+
 footer nav a {
-  color: white;
+  color: #fff;
+  text-decoration: none;
 }
+
 /*About Page Styles*/
 
 /*Responsive Styles*/
-@media (max-width: 500px) {
-  header nav img {
+
+@media only screen and (max-width: 500px) {
+  header nav a img {
     display: block;
-    width: 50%;
+    padding-bottom: 1em;
+    margin: 0 auto;
   }
 
-  .top-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: start;
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  header nav a {
+    margin: 0.8em;
+  }
+
+  .jumbo {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .jumbo img {
+    width: 100%;
+  }
+
+  .top-content .text-container {
+    width: 80%;
+  }
+
+  .boxes div {
+    width: 40%;
   }
 
   .bottom-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
   }
-  footer {
-    display: flex;
-    flex-direction: column;
+
+  .bottom-content h2 {
+    text-align: center;
+    padding: 1em;
   }
-  .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 50%;
+
+  .bottom-content .text-container {
+    width: 100%;
+  }
+
+  footer nav {
+    display: block;
+    padding: 0;
+  }
+  footer nav a {
+    display: block;
+    text-align: center;
+    margin: 1em;
   }
 }
