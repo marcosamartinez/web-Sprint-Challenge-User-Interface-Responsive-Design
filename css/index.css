@@ -308,6 +308,15 @@ footer nav a {
 
 /*About Page Styles*/
 
+/* Jumbo-About */
+.jumbo-about {
+  padding-top: 3em;
+}
+.jumbo-about img {
+  display: block;
+  margin: 0 auto;
+}
+
 /*Responsive Styles*/
 
 @media only screen and (max-width: 500px) {
