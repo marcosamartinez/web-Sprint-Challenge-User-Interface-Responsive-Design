@@ -307,6 +307,15 @@ footer nav a {
 }
 
 /*About Page Styles*/
+.container-about-page {
+  width: 80%;
+  margin: 0 auto;
+}
+/* nav */
+nav {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /* Jumbo-About */
 .jumbo-about {
@@ -315,6 +324,67 @@ footer nav a {
 .jumbo-about img {
   display: block;
   margin: 0 auto;
+}
+/* Top-context */
+
+.top .top-context {
+  margin: 0 auto;
+  width: 70%;
+}
+.top .top-context h2 {
+  margin: 2em 0;
+}
+.top .top-context p {
+  font-size: large;
+  text-align: justify;
+}
+/* Middle-content2 */
+
+.middle-content2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  border-top: 2px solid #ff4b00;
+}
+.middle-content2 img {
+  margin: 1.5em 0;
+}
+.middle-content2 h2 {
+  margin: 1em 0;
+}
+.middle-content2 p {
+  margin: 1em 0;
+}
+/* Top-content */
+
+.top-left {
+  width: 40%;
+  border-bottom: 2px solid #ff4b00;
+}
+.top-right {
+  width: 40%;
+  border-bottom: 2px solid #ff4b00;
+}
+.bottom-left {
+  width: 40%;
+  border-bottom: 2px solid #ff4b00;
+}
+.bottom-right {
+  width: 40%;
+  border-bottom: 2px solid #ff4b00;
+}
+/* Bottom-content */
+
+.bottom-content2 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.bottom-content2 p {
+  font-size: large;
+  text-align: justify;
 }
 
 /*Responsive Styles*/
